@@ -21,6 +21,12 @@ Use cases:
 
 ## Architecture
 
+![image](https://github.com/user-attachments/assets/bac9b799-b083-4b8e-ba86-9fa906cac68d)
+
+
+
+
+
 
 
 ## How the RAG pipeline works
