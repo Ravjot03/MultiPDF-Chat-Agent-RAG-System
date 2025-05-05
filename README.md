@@ -17,3 +17,7 @@ Use cases:
 3. Business report understanding
 4. Internal knowledge base search
 5. RFP/documentation analysis
+
+
+## Architecture
+**![image](https://github.com/user-attachments/assets/e362be00-3490-4f9b-80ef-e7aaea6bffd4)**
