@@ -21,3 +21,15 @@ Use cases:
 
 ## Architecture
 **![image](https://github.com/user-attachments/assets/e362be00-3490-4f9b-80ef-e7aaea6bffd4)**
+
+
+## How the RAG pipeline works
+1. Input PDFs: Users drag and drop one or more PDF documents.
+2. Text Extraction: Each PDF is parsed into raw text using PyPDF2.
+3. Chunking: Text is split into manageable, overlapping segments using LangChain’s RecursiveCharacterTextSplitter.
+4. Embedding: Text chunks are embedded via Google's embedding-001 model.
+5. Vector Indexing: Chunks are stored in a FAISS index.
+6. Semantic Search: On user query, FAISS retrieves the most similar chunks.
+7. Answer Generation: The relevant context is passed to Gemini 1.5 Pro, which generates a grounded, accurate answer.
+8. Output: The result is displayed in the Streamlit UI.
+
